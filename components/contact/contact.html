@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact</h1>
+    <div>
+       <form action="contact_inquiry" method="post">
+        <fieldset>
+            <legend>Name</legend>
+            <Label for="first_name">First Name (required):</Label>
+            <input type="text" id="first_name" name="First Name" placeholder="John" aria-required="true" required size="20">
+            <label for="last_name">Last Name (required):</label>
+            <input type="text" id="last_name" name="Last Name" placeholder="Bigbote" aria-required="true" required size="20">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <Label for="email">email:</Label> 
+            <input type="text" id="email" name="email" placeholder="JohnBigbote@8thdimension.com" size="40">
+            <label for="phone">phone:</label>            
+            <input type="text" id="phone" name="phone" placeholder="8675309" size="10">
+        </fieldset>
+        <fieldset>
+            <legend>Request</legend>
+            <fieldset>
+            <label for="type">Type</label>
+            <select name="type" id="type">
+                <option value="programming">Programming</option>
+                <option value="infrastructure">Infrastructure</option>
+                <option value="database">Database</option>
+                <option value="job_query">Job Query</option>
+                <option value="advice">Advice</option>
+                <option value="charity">Charity</option>
+                <option value="other">Other</option>
+            </select>
+            </fieldset>
+            <fieldset>
+            <label for="details">Details</label>
+            <textarea name="details" id="details" cols="30" rows="10"></textarea>
+            </fieldset>
+        </fieldset>
+       </form>
+    </div>
+</body>
+</html>

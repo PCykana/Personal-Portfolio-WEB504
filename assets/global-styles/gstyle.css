@@ -1,11 +1,7 @@
-h1 {
-      
- }
-
-h2 {
-
+body {
+    min-width: 300px;
+    min-height: 200px;
 }
-
 .mainTitle {
     text-align: center;
     width: 80%;

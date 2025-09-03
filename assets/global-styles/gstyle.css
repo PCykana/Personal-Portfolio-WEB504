@@ -2,6 +2,7 @@ body {
     min-width: 300px;
     min-height: 200px;
 }
+    
 .mainTitle {
     text-align: center;
     width: 80%;
@@ -20,12 +21,35 @@ body {
 
 #charity {
     background-image: url(../images/Bossfight.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 .sitelinks {
     text-align: center;
-    
     background-color: darkturquoise;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.sitelinks a {
+    display: inline-block;
+    justify-items: space-between;
+}
+
+#meImg {
+    justify-content: left;
+    max-width: 250px;
+    max-height: 400px;
+}
+
+#meImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }

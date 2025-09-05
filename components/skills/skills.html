@@ -11,23 +11,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/global-styles/gstyle.css">
-    <div class=sitelinks>
-        <a href="../home/home.html">Home</a>
-        <a href="../skills/skills.html">Skills</a>
-        <a href="../projects/projects.html">Projects</a>
-        <a href="../charity/charity.html">Extra Life</a>
-        <a href="../contact/contact.html">Contact</a>
-    </div>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+                  <!--Main, Headder, nav-->
+    <header class="sticky-header" role="banner">
+        <!--Site Title with id and keyboard Focus-->
+        <h1 class="mainTitle" tabindex="0">WWW.PETE.COM</h1>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="../home/home.html" class="nav-link">Home</a></li>
+                <li><a href="../skills/skills.html" class="nav-link">Skills</a></li>
+                <li><a href="../projects/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../charity/charity.html" class="nav-link">Extra Life</a></li>
+                <!--target="_blank" opens link in a new tab, rel="noopener" for security-->
+                <li><a href="../contact/contact.html" class="nav-link" target="_blank" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
         <script src="" async defer></script>
-        <div class="mainTitle">
-            <h1>Skills Page</h1>
-        </div>
         <div class="otherTitle">
             <h2>Pete's Skills</h2>
         </div>

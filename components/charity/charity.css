@@ -1,0 +1,31 @@
+:root {
+    --primary: red;
+    --secondary: black;
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+#charity {
+    background-image: url(../../assets/images/fullkefka.png);
+    background-size: 100%;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+}
+
+
+#htbsbanner {
+    display: block;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1.0);
+}
+.sticky-header {
+    background-image: url(../../assets/images/HTBScropped.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+.nav-link:focus,
+.nav-link:hover {
+    background: var(--primary);
+    color: #fff;
+    outline: 2px solid #222;
+}

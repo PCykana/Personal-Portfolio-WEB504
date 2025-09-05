@@ -8,24 +8,24 @@
 #charity {
     background-image: url(../../assets/images/fullkefka.png);
     background-size: 100%;
-    /*background-attachment: fixed;*/
+    background-attachment: scroll;
+    background-color: red;
     background-repeat: no-repeat;
 }
 
-
-#htbsbanner {
+.banner {
     display: block;
-    align-content: center;
-    box-shadow: 0 0 10px rgba(0,0,0,1.0);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#htbsbanner img{
+    max-height: 50px;
 }
 .sticky-header {
-    background-image: url(../../assets/images/HTBScropped.png);
-    background-size: inherit;
-    background-repeat: no-repeat;
+    background: red;
 }
-.nav-link:focus,
-.nav-link:hover {
-    background: var(--primary);
-    color: #fff;
-    outline: 2px solid #222;
+
+.mainTitle {
+    background-color:red ;
 }

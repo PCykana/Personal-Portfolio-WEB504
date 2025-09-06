@@ -1,0 +1,52 @@
+:root {
+    --primary: yellow;
+    --secondary: black;
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+body{
+    line-height: 2;
+}
+#index-card {
+    background-color: linen;
+    min-width: calc(100px + 10%);
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 2px 4px rgba(0,0,0,0.40);
+}
+
+#index-list {
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+li:focus,
+li:hover {
+    transform: skew(-15deg, -15deg);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    background: var(--primary);
+    color: dimgray;
+    outline: none;
+}
+
+#index-title {
+    background-color: linen;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 2px 4px rgba(0,0,0,.40);
+}

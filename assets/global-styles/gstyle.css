@@ -34,6 +34,7 @@ body {
     background-color: darkturquoise;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 .nav-list {

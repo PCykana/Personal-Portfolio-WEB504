@@ -1,12 +1,14 @@
 :root {
-    --primary: yellow;
+    --hilight: yellow;
     --secondary: black;
+    --cardbox: #4c2512;
     --radius: 8px;
     --shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 body{
     line-height: 2;
 }
+
 #index-card {
     background-color: linen;
     min-width: calc(100px + 10%);
@@ -15,6 +17,19 @@ body{
     margin-right: auto;
     border-radius: 5px;
     box-shadow: 2px 4px rgba(0,0,0,0.40);
+    z-index: 1;
+}
+
+#index-cover{
+    min-width: calc(100px + 10%);
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 4px rgba(0,0,0,0.40);
+    z-index: 2;
+}
+
+#index-cover:hover, index-cover:focus{
+    transform: scaleY(0);
 }
 
 #index-list {
@@ -27,16 +42,27 @@ li {
     
 }
 
+/* crude highlight effect for index card
 li:focus,
 li:hover {
     transform: skew(-15deg, -15deg);
-}
-
+} 
 .nav-link:focus,
 .nav-link:hover {
     background: var(--primary);
     color: dimgray;
     outline: none;
+}    
+*/
+
+/* attempt at circling the link */
+
+.nav-link:focus,
+.nav-link:hover {
+    background: linen;
+    color: var(--secondary);
+    border-radius: 50%;
+    outline-color: darkblue;
 }
 
 #index-title {
@@ -49,4 +75,26 @@ li:hover {
     text-align: center;
     margin-bottom: 0;
     box-shadow: 2px 4px rgba(0,0,0,.40);
+}
+
+.index-box {
+    background-image: url(../assets/images/cherry-wood-background.jpg);
+    background-color: var(--cardbox);
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 100px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    padding-top: 4px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.40);
+}
+
+.other-title {
+    background-image: linear-gradient(45deg, darkgoldenrod, rgb(245, 185, 34), darkgoldenrod);
+    margin-top: 4px;
+    max-width: 250px;
+    outline: 2px solid rgb(159, 117, 9);
 }

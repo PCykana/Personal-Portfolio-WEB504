@@ -9,7 +9,7 @@
 <body>
     <header class="sticky-header" role="banner">
         <!--Site Title with id and keyboard Focus-->
-        <h1 class="mainTitle" tabindex="0">WWW.PETE.COM</h1>
+        <h1 class="main-title" tabindex="0">WWW.PETE.COM</h1>
         <nav aria-label="Main Navigation">
             <ul class="nav-list">
                 <li><a href="../home/home.html" class="nav-link">Home</a></li>
@@ -22,27 +22,28 @@
         </nav>
     </header>
     <main>
-    <h1>Projects</h1>
-    <div>
-        <ul>
-        <li>
-            <img src="../../assets/images/Organize!thmb.png" alt="A screenshot from the 2016 #resist game jam game Organize!">
-            <h2><a href="https://jackbounty.itch.io/organize">Organize!</a></h2>
-            <p>A small game made in Game Maker 2 for the #resist game jame in 2016</p>
-            
-        </li>
-        <li>
-            <img src="../../assets/images/" alt="A Screenshot of a CLI based Tick Tack Toe program">
-            <h2><a href="https://github.com/PCykana/SDV503-Assessment2">Tick Tack Toe</a></h2>
-            <p>A Tick Tack Toe game made as part of my programming intro class. Made in JavaScript.</p>
-        </li>
-        <li>
-            <img src="../../assets/images/" alt="A Screenshot of a CLI based patient portal program">
-            <h2><a href="https://github.com/PCykana/SDV503-Assessment3-PeterCykana">Patient Portal Project</a></h2>
-            <p>A CLI patient portal program made as part of my programming intro class. Made in JavaScript.</p>
-        </li>
-        </ul>
-    </div>
+        <h1 class="main-title">Projects</h1>
+        <section id="projects-list">
+            <ul>
+                <li class="project">
+                    <a href="https://jackbounty.itch.io/organize"><img class="project-image" src="../../assets/images/Organize!thmb.png" alt="A screenshot from the 2016 #resist game jam game Organize!"></a>
+                    <h2 class="other-title"><a href="https://jackbounty.itch.io/organize">Organize!</a></h2>
+                    <p>A small game made in Game Maker 2 for the #resist game jame in 2016</p>
+                    
+                </li>
+                <li class="project">
+                    <a href="https://github.com/PCykana/SDV503-Assessment2"><img class="project-image" src="../../assets/images/tictactoethumb.png" alt="A Screenshot of a CLI based Tic Tac Toe program"></a>
+                    <h2 class="other-title"><a href="https://github.com/PCykana/SDV503-Assessment2">Tic Tac Toe</a></h2>
+                    <p>A Tic Tac Toe game made as part of my programming intro class. Made in JavaScript.</p>
+                </li>
+                <li class="project">
+                    <a href="https://github.com/PCykana/SDV503-Assessment3-PeterCykana"><img class="project-image" src="../../assets/images/patientportalthumb.png" alt="A Screenshot of a CLI based patient portal program"></a>
+                    <h2 class="other-title"><a href="https://github.com/PCykana/SDV503-Assessment3-PeterCykana">Patient Portal Project</a></h2>
+                    <p>A CLI patient portal program made as part of my programming intro class. Made in JavaScript.</p>
+                </li>
+            </ul>
+        </section>
     </main>
 </body>
+<footer"><a href="../../pages/index.html">Go to the index</a></footer>
 </html>

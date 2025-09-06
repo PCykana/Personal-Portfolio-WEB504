@@ -19,7 +19,7 @@ body {
     padding: 0px 0;
 }
 
-.mainTitle {
+.main-title {
     text-align: center;
     width: 100%;
     background-color: steelblue;
@@ -28,7 +28,7 @@ body {
     letter-spacing: 1px;
 }
 
-.otherTitle {
+.other-title {
     text-align: center;
     width: 40%;
     background-color: darkturquoise;

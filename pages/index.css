@@ -42,7 +42,7 @@ li {
     
 }
 
-/* crude highlight effect for index card
+/* crude highlight effect for index card 
 li:focus,
 li:hover {
     transform: skew(-15deg, -15deg);

@@ -71,4 +71,10 @@ img {
 h1,h2,h3 {
     margin-bottom: 0.7em;
 }
+footer {
+    background-color: darkcyan;
+}
 
+li  {
+    list-style: none;
+}

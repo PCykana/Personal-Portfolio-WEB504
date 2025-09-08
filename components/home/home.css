@@ -1,5 +1,12 @@
+#top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
 #meImg {
     justify-content: left;
+    margin: 1em;
     max-width: 300px;
     max-height: 564px;
     border: 4px groove goldenrod;
@@ -15,4 +22,30 @@
    /* margin: 1em auto;*/
     display: block;
     justify-content: center;
+}
+
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#footnote1, #footnote2, #daggernote1 {
+    display: none;
+}
+
+.intro {
+    margin-bottom: 1em;
+}
+
+#who, #other-qna {
+    margin: 1em;
+}
+
+#footnote1:target, #footnote2:target, #daggernote1:target {
+    display: block;
 }

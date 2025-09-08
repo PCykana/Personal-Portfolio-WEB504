@@ -26,7 +26,8 @@
 }
 
 .project-info {
-    margin: 10px auto;
+    display: flex;
+    margin: 2em auto 0;
     background-color: var(--primary);
     border-radius: 20px 20px 0px 0px;
     padding: 2rem;
@@ -36,14 +37,10 @@
 }
 
 .project-image, .other-title {
-    display: inline-block;
     margin: auto;
 }
 
 p {
-    padding: 1rem;
-}
+    padding: .5rem;
 
-.other-title {
-   background-color: var(--primary);
 }

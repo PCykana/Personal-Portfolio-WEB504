@@ -18,8 +18,15 @@ body{
     border-radius: 5px;
     box-shadow: 2px 4px rgba(0,0,0,0.40);
     z-index: 1;
+    display: none;
+    transform: display 1s;
 }
 
+#index-card:target {
+    display: block;
+}
+
+/* leftovers from trying and failing to make a cover division that would receed on click.
 #index-cover{
     min-width: calc(100px + 10%);
     max-width: 300px;
@@ -30,7 +37,8 @@ body{
 
 #index-cover:hover, index-cover:focus{
     transform: scaleY(0);
-}
+} */
+
 
 #index-list {
     list-style: none;
@@ -39,7 +47,6 @@ body{
 li {
     text-align: center;
     text-decoration: none;
-    
 }
 
 /* crude highlight effect for index card 
@@ -56,6 +63,10 @@ li:hover {
 */
 
 /* attempt at circling the link */
+
+.nav-link{
+        transition: outline 0.3s;
+}
 
 .nav-link:focus,
 .nav-link:hover {
@@ -75,6 +86,10 @@ li:hover {
     text-align: center;
     margin-bottom: 0;
     box-shadow: 2px 4px rgba(0,0,0,.40);
+}
+
+#index-title a {
+    color: var(--secondary);
 }
 
 .index-box {

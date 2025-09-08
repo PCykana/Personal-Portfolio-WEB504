@@ -6,7 +6,7 @@
 }
 
 #charity {
-    background-image: url(../../assets/images/fullkefka.png);
+    /* background-image: url(../../assets/images/fullkefka.png); will apply background later to try a parallax effect */
     background-size: 100%;
     background-attachment: scroll;
     background-color: red;
@@ -28,4 +28,8 @@
 
 .mainTitle {
     background-color:red ;
+}
+
+footer {
+    background-color: red;
 }

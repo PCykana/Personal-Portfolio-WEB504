@@ -98,3 +98,8 @@ a {
 p {
     text-indent: 2em;
 }
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}

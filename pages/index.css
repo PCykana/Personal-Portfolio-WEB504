@@ -70,16 +70,15 @@ li:hover {
 
 /* attempt at circling the link */
 
-.nav-link{
+#index-card .nav-link{
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
         transition: outline 0.3s;
 }
 
-.nav-link:focus,
-.nav-link:hover {
-    background: linen;
+#index-card .nav-link:focus,
+#index-card .nav-link:hover {
     color: var(--secondary);
     border-radius: 50%;
     outline-color: darkblue;

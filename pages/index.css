@@ -71,6 +71,9 @@ li:hover {
 /* attempt at circling the link */
 
 .nav-link{
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
         transition: outline 0.3s;
 }
 
@@ -95,6 +98,9 @@ li:hover {
 }
 
 #index-title a {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
     color: var(--secondary);
 }
 

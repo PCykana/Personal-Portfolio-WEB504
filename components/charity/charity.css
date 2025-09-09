@@ -60,11 +60,16 @@ iframe {
 
 #extra-life-logo {
     max-width: min(95vw, 500px);
+    margin: 0 auto;
 }
 
 #description {
-    margin: auto;
-    max-width: 95vw;
+    margin: 0 auto 2vw;
+    max-width: min(95vw, 500px);
+}
+
+p{
+    text-align:justify;
 }
 
 .gallery {

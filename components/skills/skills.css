@@ -5,6 +5,13 @@
     --shadow: 2 4px 10px rgba(0,0,0,0.10);
 }
 
+#skills {
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: auto;
+}
+
 .skill {
     max-width: 80%;
     margin: 1em auto;

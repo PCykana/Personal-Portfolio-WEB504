@@ -97,6 +97,8 @@ a {
 
 p {
     text-indent: 2em;
+    text-align:justify;
+    margin: 1em;
 }
 
 .footer-links {

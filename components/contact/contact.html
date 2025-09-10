@@ -13,7 +13,7 @@
 <body>
     <header class="sticky-header" role="banner">
         <!--Site Title with id and keyboard Focus-->
-        <h1 class="main-title" tabindex="0">HTBS Extra Life Charity Streams</h1>
+        <h1 class="main-title" tabindex="0">WWW.PETE.COM</h1>
         <nav aria-label="Main Navigation">
             <ul class="nav-list">
                 <li><a href="../home/home.html" class="nav-link">Home</a></li>
@@ -29,22 +29,21 @@
        <form action="contact_inquiry" method="post">
         <fieldset>
             <legend>Name</legend>
-            <Label for="first_name">First Name (required):</Label>
-            <input type="text" id="first_name" name="First Name" placeholder="John" aria-required="true" required size="20">
-            <label for="last_name">Last Name (required):</label>
-            <input type="text" id="last_name" name="Last Name" placeholder="Bigbote" aria-required="true" required size="20">
+            <Label for="first_name">First Name (required): <input type="text" id="first_name" name="First Name" placeholder="John" aria-required="true" required size="20"></Label>
+            <label for="last_name">Last Name (required): <input type="text" id="last_name" name="Last Name" placeholder="Bigbote" aria-required="true" required size="20"></label>
         </fieldset>
         <fieldset>
             <legend>Contact Details</legend>
-            <Label for="email">email:</Label> 
-            <input type="email" id="email" name="email" placeholder="JohnBigbote@8thdimension.com" size="40">
-            <label for="phone">phone:</label>            
-            <input type="text" id="phone" name="phone" placeholder="8675309" size="10">
+            <Label for="email">Email: <input type="email" id="email" name="email" placeholder="JohnBigbote@8thdimension.com" size="40" aria-required="true"></Label> 
+            
+            <label for="phone">Phone: <input type="text" id="phone" name="phone" placeholder="8675309" size="10"></label>            
+            
         </fieldset>
         <fieldset>
             <legend>Request</legend>
-            <label for="type">Type</label>
+            <label for="type">Type: </label>
             <select name="type" id="type">
+                <option value="">(Select One)</option>
                 <option value="programming">Programming</option>
                 <option value="infrastructure">Infrastructure</option>
                 <option value="database">Database</option>
@@ -54,9 +53,10 @@
                 <option value="other">Other</option>
             </select>
             <br>
-            <label for="details">Details</label>
-            <textarea name="details" id="details" cols="30" rows="10"></textarea>
+            <label for="details">Details: </label>
+            <textarea name="details" id="details" cols="30" rows="10" placeholer="Hello, I am reaching out because I would like to know more about your charity efforts....."></textarea>
         </fieldset>
+        <input type="submit" value="Submit"/>
        </form>
     </div>
     </main>

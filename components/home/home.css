@@ -35,16 +35,22 @@
     align-items: flex-end;
 }
 
-#footnote1, #footnote2, #daggernote1 {
-    display: none;
-}
-
 .intro {
     margin-bottom: 1em;
 }
 
+#mihi {
+    text-align: center;
+    text-indent: 0;
+    text-justify: auto;
+}
+
 #who, #other-qna {
     margin: 1em;
+}
+
+#footnote1, #footnote2, #daggernote1 {
+    display: none;
 }
 
 #footnote1:target, #footnote2:target, #daggernote1:target {

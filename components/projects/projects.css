@@ -1,6 +1,6 @@
 
 :root {
-    --radius: 8px;
+    --radius: 20px;
 
 }
 section {
@@ -9,11 +9,12 @@ section {
 }
 
 .project{
+    color: var(--primary);
     margin-right: auto;
     margin-left: auto;
     max-width: 100%;
-    border-radius: 20px;
-    outline: 2px solid slategray;
+    border-radius: var(--radius);
+    outline: var(--outline);
     box-shadow: var(--bshadow);
     margin-bottom: 1em;
     background-color: var(--background);
@@ -28,12 +29,16 @@ section {
 .project-info {
     display: flex;
     margin: 2em auto 0;
-    background-color: slategray;
-    border-radius: 20px 20px 0px 0px;
+    background-color: var(--sbgcolor);
+    border-radius: var(--radius) var(--radius) 0px 0px;
     padding: 2rem;
     align-items: center;
     justify-content: center;
+    border-bottom: var(--outline);
 
+}
+.project p{
+    min-height: 57px;
 }
 
 .project-image, .other-title {
@@ -41,6 +46,7 @@ section {
 }
 
 .project:hover, .project:focus {
-  outline: 2px solid var(--secondary);
-  box-shadow: var(--fshadow);
+    color:var(--secondary);
+    outline: 2px solid var(--secondary);
+    box-shadow: var(--fshadow);
 }

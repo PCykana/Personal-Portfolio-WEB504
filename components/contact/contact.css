@@ -43,13 +43,13 @@ select {
     border: none;
     background-color: var(--sbgcolor);
     box-shadow: var(--bshadow);
-    outline: 2px solid var(--primary);
+    outline: var(--outline);
 }
 
 input:focus,input:hover,
 textarea:focus, textarea:hover,
 select:focus, select:hover  {
-  outline: 2px solid var(--secondary);
+  outline: var(--foutline);
   box-shadow: var(--fshadow);
 }
 
@@ -68,9 +68,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:focus, input[type="submit"]:hover{
-  color: var(--primary);
+  color: var(--sbuttonfc);
   background-color: var(--secondary);
-  outline: 2px solid var(--secondary);
+  outline: var(--foutline);
   box-shadow: var(--fshadow);
 }
 

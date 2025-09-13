@@ -21,8 +21,8 @@ section {
     padding: 1em;
     margin-bottom: 32px;
     border-radius: var(--radius);
-    background-color: lightslategray;
-    outline: 2px solid var(--primary);
+    background-color: var(--sbgcolor);
+    outline: var(--outline);
     box-shadow: var(--bshadow);
     
 }
@@ -36,9 +36,10 @@ section {
 .skill-project {
     height: 90px;
     width: 90px;
-    outline: 2px solid var(--primary);
+    outline: var(--outline);
     border-radius: 5px;
-    box-shadow: var(--bshadow)
+    box-shadow: var(--bshadow);
+    background-color: var(--sbgcolor);
 }
 
 .skill-project img {
@@ -52,6 +53,6 @@ section {
 }
 
 .skill-project:focus, .skill-project:hover {
-    outline: 2px solid var(--secondary);
+    outline: var(--foutline);
     box-shadow: var(--fshadow);
 }

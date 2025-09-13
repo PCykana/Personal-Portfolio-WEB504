@@ -1,29 +1,53 @@
 
-/* oldschool computer */
+/* monochrome green oldschool computer */
+:root {
+    --primary: lime;
+    --secondary: var(--primary);
+    --bgcolor: rgb(2, 62, 62);
+    --sbgcolor: rgb(2, 62, 62);
+    --outline: 2px solid var(--primary);
+    --shadow: 0 0 8px 2px var(--primary);
+    --bshadow: none;
+    --fshadow: -1px 2px 8px 4px var(--secondary);
+    --foutline: 2px solid var(--secondary);
+    --mshadow: 0 3px 2px -2px  var(--primary);
+    --sbutton: none;
+    --sbuttonfc: var(--bgcolor);
+}
+
+
+/* oldschool computer 
 
 :root {
     --primary: lime;
     --secondary: white;
     --bgcolor: rgb(2, 62, 62);
-    --sbgcolor: slategrey;
-    --shadow: 0 0 8px 2px rgb(0, 255, 0);
-    --bshadow: -1px 2px 8px 4px rgb(0, 255, 0);
-    --fshadow: -1px 2px 8px 4px rgb(255, 255, 255);
-    --mshadow: 0 3px 2px -2px  rgb(0, 255, 0);
-    --sbutton: lime;
+    --sbgcolor: var(--bgcolor);
+    --outline: 2px solid var(--primary);
+    --shadow: 0 0 8px 2px var(--primary);
+    --bshadow: -1px 2px 8px 4px var(--primary);
+    --fshadow: -1px 2px 8px 4px var(--secondary);
+    --foutline: 2px solid var(--secondary);
+    --mshadow: 0 3px 2px -2px  var(--primary);
+    --sbutton: var(--primary);
+    --sbuttonfc: var(--primary);
 }
+*/
 
-/* bisexual lighting version
+/* bisexual lighting version 
 :root {
     --primary: #f0f;
     --secondary: #0ff;
-    --bgcolor: rgb(2, 62, 62);
-    --sbgcolor: slategrey;
+    --bgcolor: rgb(0, 17, 3);
+    --sbgcolor: rgb(48, 0, 55);
+    --outline: 2px solid var(--primary);
     --shadow: 0 0px 8px 2px rgb(255, 0, 255);
     --bshadow: -1px 2px 8px 4px rgb(255, 0, 255);
     --fshadow: -1px 2px 8px 4px rgb(0, 255, 255);
+    --foutline: 2px rgb(0, 255, 255);
     --mshadow: 0 3px 2px -2px  rgb(255, 0, 255);
     --sbutton: #ff00fff0;
+    --sbuttonfc: var(--primary);
 } */
 
 *{
@@ -87,6 +111,7 @@ body {
 }
 
 .nav-link {
+    align-content: space-around;
     color: var(--primary);
     font-weight: bold;
     padding: 0.25em 0.75em;
@@ -97,7 +122,7 @@ body {
 .nav-link:focus,
 .nav-link:hover {
     color: var(--secondary);
-      outline: 2px solid var(--secondary);
+    outline: var(--foutline);
     box-shadow: var(--fshadow);
 }
 
@@ -133,12 +158,13 @@ a {
     text-indent: 0;
     margin: 0;
     text-align: center;
+    padding: 0;
 }
 
 p {
     text-indent: 2em;
     text-align:justify;
-    margin: 1em;
+    padding: 1em;
 }
 
 .footer-links {
@@ -150,3 +176,6 @@ p {
         font-weight:600;
 }
 
+.footer-links {
+    margin: 1em;
+}

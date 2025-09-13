@@ -1,8 +1,20 @@
+:root {
+    --primary: #f0f;
+    --secondary: #0ff;
+    --bgcolor: rgb(2, 62, 62);
+    --sbgcolor: slategrey;
+    --shadow: 0 2px 4px rgb(255, 0, 255);
+    --bshadow: -1px 2px 8px 4px rgb(255, 0, 255);
+    --fshadow: -1px 2px 8px 4px rgb(0, 255, 255);
+}
+
 *{
+    color: #0ff;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    
+    /* <weight>: Use a value from 200 to 800 */
   font-family: "Oxanium", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -11,6 +23,7 @@
 }
 
 body {
+    background-color: var(--bgcolor);
     min-width: 300px;
     min-height: 200px;
     line-height: 1.6;
@@ -19,8 +32,8 @@ body {
 .sticky-header {
     position: sticky;
     top: 0px;
-    background: slategray;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    background: var(--bgcolor);
+    box-shadow: var(--shadow);
     z-index: 10;
     padding: 0px 0;
 }
@@ -40,17 +53,23 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-list{
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .nav-list {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     gap: 2em;
     margin-top: 1em;
 }
 
 .nav-link {
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: bold;
     padding: 0.25em 0.75em;
     border-radius: 4px;
@@ -59,9 +78,8 @@ body {
 
 .nav-link:focus,
 .nav-link:hover {
-    background: var(--primary);
-    color: #fff;
-    outline: 2px solid #222;
+    color: var(--secondary);
+    outline: 2px solid var(--primary);
 }
 
 .external-link:focus,
@@ -76,10 +94,11 @@ img {
 }
 
 h1,h2,h3 {
+        font-weight:600;
     margin-bottom: 0.7em;
 }
 footer {
-    background-color: slategray;
+    background-color: var(--bgcolor);
     padding: .2em;
 }
 
@@ -92,6 +111,8 @@ a {
 }
 
 #copyright {
+    text-indent: 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -103,5 +124,10 @@ p {
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+.other-title a {
+        font-weight:600;
+}
+

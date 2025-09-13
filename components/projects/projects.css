@@ -1,40 +1,41 @@
 
 :root {
-    --primary: slategray;
-    --secondary: black;
     --radius: 8px;
-    --shadow: 0 2px 8px rgba(0,0,0,0.10);
+
+}
+section {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .project{
     margin-right: auto;
     margin-left: auto;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 20px;
-    outline: 2px solid var(--primary);
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.40);
+    outline: 2px solid slategray;
+    box-shadow: var(--shadow);
     margin-bottom: 1em;
+    background-color: var(--background);
  
 }
 
 #projects {
     text-align: left;
-    margin-top: 1em;
-    margin-left: 3em;
-    margin-right: auto;
-    background-color: white;
+    margin: 1em auto 0 2%;
 }
 
 .project-info {
     display: flex;
     margin: 2em auto 0;
-    background-color: var(--primary);
+    background-color: slategray;
     border-radius: 20px 20px 0px 0px;
     padding: 2rem;
     align-items: center;
     justify-content: center;
 
 }
+
 
 .project-image, .other-title {
     margin: auto;

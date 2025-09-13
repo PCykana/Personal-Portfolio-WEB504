@@ -1,10 +1,14 @@
 :root {
-    --primary: red;
-    --secondary: black;
+    --primary: black;
+    --secondary: white;
+    --bgcolor: red;
     --radius: 8px;
     --shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
+*{
+    color: var(--primary);
+}
 /* * {
   font-family: "electrolize", sans-serif;
   font-weight: 400;
@@ -15,7 +19,7 @@
     /* background-image: url(../../assets/images/fullkefka.png); will apply background later to try a parallax effect */
     background-size: 100%;
     background-attachment: scroll;
-    background-color: red;
+    background-color: var(--bgcolor);
     background-repeat: no-repeat;
 }
 
@@ -23,7 +27,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: var(--shadow);
 }
 
 #htbsbanner img{
@@ -34,12 +38,12 @@
     font-family: "Rubik Glitch", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: var(--secondary);
   
 }
 
 .sticky-header {
-    background: var(--primary);
+    background: var(--bgcolor);
+    box-shadow: var(--shadow);
 }
 
 .introductory-content {
@@ -68,9 +72,6 @@ iframe {
     max-width: min(95vw, 500px);
 }
 
-p{
-    text-align:justify;
-}
 
 .gallery {
     margin-left: 2.5vw;
@@ -89,7 +90,7 @@ p{
 }
 
 footer {
-    background-color: var(--primary);
+    background-color: var(--bgcolor);
 }
 
 #copyright {
@@ -153,6 +154,4 @@ footer {
 		transform: translate(0, -5);
 	}
 }
-
-
 

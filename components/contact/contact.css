@@ -14,7 +14,8 @@ form {
 
 legend {
     width: 100%;
-    border-bottom: 3px solid #3b3b4f;
+    border-bottom: 3px solid var(--primary);
+    box-shadow: 0 3px 2px -2px  rgb(255, 0, 255);
 }
 
 fieldset {
@@ -39,21 +40,37 @@ select {
     min-height: 2em;
     padding-left: 1rem;
     border-radius:3px;
-    border: 1px solid slategray;
+    border: none;
+    background-color: var(--sbgcolor);
+    box-shadow: var(--bshadow);
+    outline: 2px solid var(--primary);
 }
 
-select {
-    background-color: lightslategray;
+input:focus,input:hover,
+textarea:focus, textarea:hover,
+select:focus, select:hover  {
+  outline: 2px solid var(--secondary);
+  box-shadow: var(--fshadow);
 }
+
 
 input[type="submit"] {
+  font-weight: 800;
   display: block;
   width: 60%;
   margin: 1em auto;
   height: 2em;
-  font-size: 1.1rem;
-  background-color: slategray;
+  font-size: 1.5rem;
+  background-color: #ff00fff0;
   border-radius: 3px;
   min-width: 300px;
+  box-shadow: var(--bshadow);
+}
+
+input[type="submit"]:focus, input[type="submit"]:hover{
+  color: var(--primary);
+  background-color: var(--secondary);
+  outline: 2px solid var(--secondary);
+  box-shadow: var(--fshadow);
 }
 

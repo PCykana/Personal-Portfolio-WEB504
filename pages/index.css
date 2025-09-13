@@ -1,22 +1,33 @@
 :root {
     --hilight: yellow;
+    --pen: darkblue;
+    --primary: black;
     --secondary: black;
     --cardbox: #4c2512;
+    --bgcolor: linen;
     --radius: 8px;
     --shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
+*{
+    color: var(--primary);
+}
+
 body{
     line-height: 2;
 }
 
 .main-title{
+    color: var(--primary);
     font-family: "Bungee Hairline", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+ .nav-link{
+    color: var(--primary);
+ }
 #index-card {
-    background-color: linen;
+    background-color: var(--bgcolor);
     min-width: calc(100px + 10%);
     max-width: 300px;
     margin-left: auto;
@@ -79,13 +90,12 @@ li:hover {
 
 #index-card .nav-link:focus,
 #index-card .nav-link:hover {
-    color: var(--secondary);
     border-radius: 50%;
-    outline-color: darkblue;
+    outline-color: var(--pen);
 }
 
 #index-title {
-    background-color: linen;
+    background-color: var(--bgcolor);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     max-width: 100px;
@@ -100,7 +110,7 @@ li:hover {
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .index-box {

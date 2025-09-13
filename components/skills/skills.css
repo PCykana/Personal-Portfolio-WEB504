@@ -1,19 +1,18 @@
 :root {
-    --primary: slategray;
-    --secondary: black;
-    --radius: 8px;
-    --shadow: 2 4px 10px rgba(0,0,0,0.10);
+    --radius: 5px;
+}
+
+section {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 #skills {
     text-align: left;
-    margin-top: 1em;
-    margin-left: 3em;
-    margin-right: auto;
+    margin: 1em auto 0 2%;
 }
 
 .skill {
-    max-width: 80%;
     margin: 1em auto;
     justify-content: center;
     gap: 2em;
@@ -22,10 +21,10 @@
 
 .skill-name {
     padding: 1em;
-    outline: 3px ridge var(--primary);
+    outline: 2px solid lightslategray;
     border-radius: var(--radius);
-    background-color: var(--primary);
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.40);
+    background-color: lightslategray;
+    box-shadow: var(--shadow);
 }
 
 .skill-projects {
@@ -39,7 +38,7 @@
     width: 90px;
     outline: 2px solid var(--secondary);
     border-radius: 5px;
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.40)
+    box-shadow: var(--shadow)
 }
 
 .skill-project img {

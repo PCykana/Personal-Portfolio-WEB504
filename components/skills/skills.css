@@ -13,18 +13,18 @@ section {
 }
 
 .skill {
-    margin: 1em auto;
+    margin: 2em auto;
     justify-content: center;
-    gap: 2em;
-    
 }
 
 .skill-name {
     padding: 1em;
-    outline: 2px solid lightslategray;
+    margin-bottom: 32px;
     border-radius: var(--radius);
     background-color: lightslategray;
-    box-shadow: var(--shadow);
+    outline: 2px solid var(--primary);
+    box-shadow: var(--bshadow);
+    
 }
 
 .skill-projects {
@@ -36,9 +36,9 @@ section {
 .skill-project {
     height: 90px;
     width: 90px;
-    outline: 2px solid var(--secondary);
+    outline: 2px solid var(--primary);
     border-radius: 5px;
-    box-shadow: var(--shadow)
+    box-shadow: var(--bshadow)
 }
 
 .skill-project img {
@@ -49,4 +49,9 @@ section {
 
 .skill-project li {
     align-items: center;
+}
+
+.skill-project:focus, .skill-project:hover {
+    outline: 2px solid var(--secondary);
+    box-shadow: var(--fshadow);
 }

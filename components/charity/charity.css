@@ -4,6 +4,8 @@
     --bgcolor: red;
     --radius: 8px;
     --shadow: 0 2px 8px rgba(0,0,0,0.10);
+    --bshadow: none;
+    --fshadow: none;
 }
 
 *{
@@ -104,6 +106,7 @@ footer {
     z-index: 1;
     animation: glitch-animation 1.5s
     infinite alternate;
+    outline: none;
 }
 
 .glitch::before, .glitch::after {

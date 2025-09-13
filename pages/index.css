@@ -23,8 +23,9 @@ body{
     font-style: normal;
 }
 
- .nav-link{
+ .nav-link:hover{
     color: var(--primary);
+    box-shadow: none;
  }
 #index-card {
     background-color: var(--bgcolor);

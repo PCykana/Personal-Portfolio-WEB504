@@ -14,7 +14,7 @@ section {
     max-width: 100%;
     border-radius: 20px;
     outline: 2px solid slategray;
-    box-shadow: var(--shadow);
+    box-shadow: var(--bshadow);
     margin-bottom: 1em;
     background-color: var(--background);
  
@@ -36,8 +36,11 @@ section {
 
 }
 
-
 .project-image, .other-title {
     margin: auto;
 }
 
+.project:hover, .project:focus {
+  outline: 2px solid var(--secondary);
+  box-shadow: var(--fshadow);
+}

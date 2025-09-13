@@ -79,7 +79,8 @@ body {
 .nav-link:focus,
 .nav-link:hover {
     color: var(--secondary);
-    outline: 2px solid var(--primary);
+      outline: 2px solid var(--secondary);
+    box-shadow: var(--fshadow);
 }
 
 .external-link:focus,

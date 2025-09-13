@@ -1,17 +1,33 @@
 
-/* bisexual lighting version */
+/* oldschool computer */
+
+:root {
+    --primary: lime;
+    --secondary: white;
+    --bgcolor: rgb(2, 62, 62);
+    --sbgcolor: slategrey;
+    --shadow: 0 0 8px 2px rgb(0, 255, 0);
+    --bshadow: -1px 2px 8px 4px rgb(0, 255, 0);
+    --fshadow: -1px 2px 8px 4px rgb(255, 255, 255);
+    --mshadow: 0 3px 2px -2px  rgb(0, 255, 0);
+    --sbutton: lime;
+}
+
+/* bisexual lighting version
 :root {
     --primary: #f0f;
     --secondary: #0ff;
     --bgcolor: rgb(2, 62, 62);
     --sbgcolor: slategrey;
-    --shadow: 0 2px 4px rgb(255, 0, 255);
+    --shadow: 0 0px 8px 2px rgb(255, 0, 255);
     --bshadow: -1px 2px 8px 4px rgb(255, 0, 255);
     --fshadow: -1px 2px 8px 4px rgb(0, 255, 255);
-}
+    --mshadow: 0 3px 2px -2px  rgb(255, 0, 255);
+    --sbutton: #ff00fff0;
+} */
 
 *{
-    color: #0ff;
+    color: var(--secondary);
     box-sizing: border-box;
     margin: 0;
     padding: 0;

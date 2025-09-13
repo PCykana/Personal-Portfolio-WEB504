@@ -15,7 +15,7 @@ form {
 legend {
     width: 100%;
     border-bottom: 3px solid var(--primary);
-    box-shadow: 0 3px 2px -2px  rgb(255, 0, 255);
+    box-shadow: var(--mshadow);
 }
 
 fieldset {
@@ -61,7 +61,7 @@ input[type="submit"] {
   margin: 1em auto;
   height: 2em;
   font-size: 1.5rem;
-  background-color: #ff00fff0;
+  background-color: var(--sbutton);
   border-radius: 3px;
   min-width: 300px;
   box-shadow: var(--bshadow);

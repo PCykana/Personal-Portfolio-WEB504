@@ -25,7 +25,7 @@
     border-radius: 50%;
     border: 4px double var(--primary);
    /* margin: 1em auto;*/
-    box-shadow: 0 0 8px 2px rgb(255, 0, 255);
+    box-shadow: var(--shadow);
 }
 
 .mihi {
